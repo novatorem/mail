@@ -24,10 +24,10 @@ const onsubmit = (e) => {
             document.getElementById('secret-message').textContent = text
             document.getElementById('secret-message').style.background = 'None'
             if (text === 'You failed the captcha, please try again!') {
-                document.getElementById('mail-to').href = "mailto:" + text
+                document.getElementById('mail-to').href = "https://support.google.com/recaptcha"
             }
             else {
-                document.getElementById('mail-to').href = "https://support.google.com/recaptcha"
+                document.getElementById('mail-to').href = "mailto:" + text
             }
         }).catch((err) => {
             console.log(err)
