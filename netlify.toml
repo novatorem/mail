@@ -1,2 +1,4 @@
 [build]
-  functions = "./functions"
+  base = "dist/"
+[functions]
+  directory = "functions/"
