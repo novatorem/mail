@@ -1,10 +1,10 @@
 html {
-    background-color:#fff
+    background-color:#121212
 }
 
 body {
     font-family:IBM Plex Sans,sans-serif;
-    color:#000;
+    color:rgb(214, 214, 214);
     font-size:16px;
     margin:2em auto;
     max-width:800px;
@@ -27,11 +27,15 @@ input {
     border: 1px solid transparent;
     border-radius: 4px;
     background-color: #474786;
-    box-shadow: 0 1px 3px 0 #e6ebf1;
+    box-shadow: 0 1px 3px 0 #1e1e3a;
     -webkit-transition: box-shadow 150ms ease;
     transition: box-shadow 150ms ease;
 }
 
 input:hover {
     box-shadow: 0 2px 4px 0 rgb(170, 170, 170);
+}
+
+a {
+    color: #b0bce2;
 }
