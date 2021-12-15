@@ -28,6 +28,7 @@ const onsubmit = (e) => {
             }
             else {
                 document.getElementById('mail-to').href = "mailto:" + text
+                document.getElementById('copy-to-clipboard').style.display = "block"
             }
         }).catch((err) => {
             console.log(err)
@@ -36,3 +37,14 @@ const onsubmit = (e) => {
 
 const f = document.getElementById('form')
 f.addEventListener('submit', onsubmit)
+
+function copyToClipboard() {
+    var copyText = document.getElementById('secret-message');
+    navigator.clipboard.writeText(copyText.textContent);
+
+    const div = document.createElement('div')
+    div.className = 'toast'
+    div.innerHTML = "Copied to clipboard!"  
+    setTimeout(function() { div.remove() }, 5000);
+    document.body.appendChild(div);
+}
