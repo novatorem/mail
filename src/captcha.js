@@ -1,4 +1,4 @@
-const https = require('https')
+import { request } from 'https';
 
 // Name of environment variables
 const CAPTCHA_SECRET = 'CAPTCHA_SECRET'
@@ -9,7 +9,7 @@ const SECRET_MESSAGE = 'SECRET_MESSAGE'
 // https://stackoverflow.com/questions/38533580/nodejs-how-to-promisify-http-request-reject-got-called-two-times
 function httpRequest(params, postData) {
     return new Promise(function(resolve, reject) {
-        var req = https.request(params, function(res) {
+        var req = request(params, function(res) {
             // reject on bad status
             if (res.statusCode < 200 || res.statusCode >= 300) {
                 return reject(new Error('statusCode=' + res.statusCode));
@@ -45,7 +45,7 @@ function httpRequest(params, postData) {
  * Supports GET requests with client request token as 'rt' in query string
  * i.e. https://www. .... .com?rt=aaa123456789
  */
-exports.handler = async (event, context) => {
+export async function handler(event, context) {
     if (event.httpMethod !== 'GET') {
         return { 
             statusCode: 405 
