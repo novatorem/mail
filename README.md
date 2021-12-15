@@ -1,5 +1,7 @@
 # Serverless reCAPTCHA
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fa8b9790-39ed-4665-bb44-8589eaf09e91/deploy-status)](https://app.netlify.com/sites/mailnovac/deploys)
+
 ## Use cases:
  - Hide email, phone numbers from scrapers
  - Hide download links
