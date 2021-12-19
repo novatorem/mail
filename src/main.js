@@ -23,7 +23,12 @@ const onsubmit = (e) => {
         }).then((text) => {
             document.getElementById('secret-message').textContent = text
             document.getElementById('secret-message').style.background = 'None'
-            document.getElementById('mail-to').href = "mailto:" + text
+            if (text === 'You failed the captcha, please try again!') {
+                document.getElementById('mail-to').href = "mailto:" + text
+            }
+            else {
+                document.getElementById('mail-to').href = "https://support.google.com/recaptcha"
+            }
         }).catch((err) => {
             console.log(err)
         })
