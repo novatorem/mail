@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="theme-color" content="#ffffff">
-  <title>Mail Me</title>
+  <title>Mail me</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="main.css">
   <link rel="stylesheet" type="text/css"
     href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:500&amp;display=swap">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✉️</text></svg>">
   <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
@@ -22,7 +25,9 @@
     <input type="submit" value="Submit">
   </form>
   <p>
-    <span id="secret-message"></span>
+    <a id="mail-to">
+      <span id="secret-message"></span>
+    </a>
   </p>
   <script src="main.js"></script>
 

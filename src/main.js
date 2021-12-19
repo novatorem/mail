@@ -16,13 +16,14 @@ const onsubmit = (e) => {
                     if (text === '') {
                         text = '(No secret message set.)'
                     }
-                    return 'A human, success! ' + text
+                    return text
                 })
             } 
             return 'You failed the captcha, please try again!'
         }).then((text) => {
             document.getElementById('secret-message').textContent = text
             document.getElementById('secret-message').style.background = 'None'
+            document.getElementById('mail-to').href = "mailto:" + text
         }).catch((err) => {
             console.log(err)
         })
