@@ -33,9 +33,46 @@ input {
 }
 
 input:hover {
-    box-shadow: 0 2px 4px 0 rgb(170, 170, 170);
+    box-shadow: 0 2px 4px 0 rgb(75, 75, 75);
 }
 
 a {
     color: #b0bce2;
+}
+
+#copy-to-clipboard {
+    color: white;
+    box-sizing: border-box;
+    height: 40px;
+    width: 100px;
+    padding: 10px 12px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #474786;
+    box-shadow: 0 1px 3px 0 #1e1e3a;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+    text-align: center;
+    display: none;
+}
+
+#copy-to-clipboard:hover {
+    box-shadow: 0 2px 4px 0 rgb(75, 75, 75);
+}
+
+.toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    padding: 15px;
+    background-color: rgba(12, 49, 23, 0.7);
+    color: #fff;
+    transform: translate(-50%, 0);
+    animation: fadein 0.5s;
+    font-size: 12px;
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
 }
