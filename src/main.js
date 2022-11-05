@@ -29,6 +29,9 @@ const onsubmit = (e) => {
             else {
                 document.getElementById('mail-to').href = "mailto:" + text
                 document.getElementById('copy-to-clipboard').style.display = "block"
+                
+                document.getElementById('form').style.display = "none"
+                document.getElementById('verificationText').style.display = "none"
             }
         }).catch((err) => {
             console.log(err)
