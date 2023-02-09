@@ -2,39 +2,39 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="theme-color" content="#ffffff">
-  <title>Mail me</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <link rel="stylesheet" type="text/css"
-    href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:500&amp;display=swap">
-  <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✉️</text></svg>">
-  <script src="https://www.google.com/recaptcha/api.js"></script>
+	<meta charset="utf-8">
+	<meta name="theme-color" content="#ffffff">
+	<title>Mail me</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:500&amp;display=swap">
+	<link rel="icon"
+		href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✉️</text></svg>">
+	<script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
 <body>
-  <h1>View my public e-mail address</h1>
+	<h1>View my public e-mail address</h1>
 
-  <p id="verificationText">Please verify that you're not a robot:</p>
-  <!-- Element provided by Google -->
-  <form id="form" action="?" method="POST">
-    <div class="g-recaptcha" data-theme="dark" data-sitekey="6Lcl7aIdAAAAAO3mZ-cF50ty2SC9p7weKBCBbSPL"></div>
-    <br />
-    <input type="submit" value="Submit">
-  </form>
-  <p>
-    <a id="mail-to">
-      <span id="secret-message"></span>
-    </a>
-    <br />
-    <br />
-    <button id="copy-to-clipboard" onclick="copyToClipboard()">
-      Copy
-    </button>
-  </p>
-  <script src="main.js"></script>
+	<p id="verificationText">Please verify that you're not a robot:</p>
+	<!-- Element provided by Google -->
+	<form id="form" action="?" method="POST">
+		<div class="g-recaptcha" data-theme="dark" data-sitekey="6Lcl7aIdAAAAAO3mZ-cF50ty2SC9p7weKBCBbSPL"></div>
+		<br />
+		<input type="submit" value="Submit">
+	</form>
+	<p>
+		<a id="mail-to">
+			<span id="secret-message"></span>
+		</a>
+		<br />
+		<br />
+		<button id="copy-to-clipboard" onclick="copyToClipboard()">
+			Copy
+		</button>
+	</p>
+	<script src="main.js"></script>
 
 </body>
 
